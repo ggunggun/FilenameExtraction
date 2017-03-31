@@ -10,7 +10,6 @@ def main(extractMethod, log):
     #app = MyApp(extractMethod, log)
     #app.MainLoop()
     app = wx.App(True, 'error.log')
-    #app.RedirectStdio('error.log')
     frame = wx.Frame(parent=None, title='Filename Extraction')
     mpnl = MainPanel(frame, extractMethod, log)
     frame.Show()
